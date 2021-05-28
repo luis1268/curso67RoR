@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title><br>
+    <p>
+        <h1>Formulario</h1>
+    </p>
     <form action=""></form>
     <label for="nombre">Nombre:</label>
     <input type="text" id="nombre" name="nombre">
@@ -22,29 +25,55 @@
     <label for="password">Contraseña</label>
     <input type="password" id="password" name="password">
     <br>
-    <br>
-    <label for="confirma">Confirmar contraseña:</label>
-    <input type="password" id="confirma" name="confirma">
-    <br>
+
+
+    <br> <label for="pw_confirm">Confirmación de Contraseña:</label>
+    <input type="password" id="pw_confirm" name="password_confirmacion">
     <br>
     <label for="fecha cumpleaños">Cumpleaños:</label>
     <input type="date" id="fecha cumpleaños" name="fecha cumpleaños">
     <br>
     <br>
+    <p>
+        <h4>selecciona tu genero</h4>
+    </p>
+    <label for="genero">masculino:</label>
+    <input type="radio" id="genero" name="genero"><br>
+
+    <label for="genero">femenino:</label>
+    <input type="radio" id="genero" name="genero"><br>
+    <label for="genero">prefiero no decir:</label>
+    <input type="radio" id="genero" name="genero"><br>
+    <br>
+    <br>
+    <br>
+
+
+    <p>
+        <h4>una breve descripcion de ti </h4>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    </p><br><br>
+
+    <select name="lenguaje favorito">
+        <option value="lenguaje">selecciona tu lenguaje favorito</option>
+        <option value="java">java</option>
+        <option value="phyton">phyton</option>
+        <option value="otro">otro</option>
+    </select>
+
+    <br>
+    <br>
 
 
 
 
 
+    <input type="submit" value="Enviar">
 
 
 
+    <body>
 
-
-    < head>
-
-        <body>
-
-        </body>
+    </body>
 
 </html>

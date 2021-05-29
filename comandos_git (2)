@@ -1,0 +1,30 @@
+pwd -> saber la ruta en la que estamos posicionados
+cd nombre_carpeta  -> acceder a la carpeta
+ls -la -> listar las carpetas y archivos internos
+clear -> limpiar pantalla en Windows, Linux  y Mac (cls ->DOS)
+cd .. -> regresa a la carpeta superior
+mkdir -> crear carpeta
+
+
+GIT
+
+git config --global user.name "nombre apellido"
+git config --global user.email "sucorreo@gmail.com"
+
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/sunick/curso67RoR.git
+git push -u origin master
+
+#ESTO REALIZARLO DESPUES SIEMPRE 
+git add .
+git commit -m "first commit"
+git push -u origin main
+
+
+git clone https://github.com/sunick/curso67RoR.git
+
+
+git pull -> bajar cambios desde la web

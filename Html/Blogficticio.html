@@ -20,7 +20,7 @@
 
 
 
-    <table style="tipos de perros">
+    <table>
         <tr>
             <th>Raza</th>
             <th>Tamaño</th>
@@ -43,32 +43,30 @@
     <h3>Por favor , contesta esta breve encuesta</h3><br>
 
     <form>
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email">
+    </form>
+    <br>
+    <br>
 
-        <input type="email" id="fname" name="fname">
-        <label for="fname">email:</label>
-        <br>
-        <br>
+    <label for="envio">si por favor enviame muchos correos:</label>
+    <input type="radio" id="envio" name="envio"><br>
 
-        <label for="fname">si por favor enviame muchos correos:</label>
-        <input type="radio" id="fname" name="fname"><br>
+    <label for="nenvio">no  por favor no me envies correos:</label>
+    <input type="radio" id="nenvio" name="nenvio"><br>
+    <br>
+    <h4>¿como supiste de nosotros?</h4><br>
 
-        <label for="fname">no  por favor no me envies correos:</label>
-        <input type="radio" id="fname" name="fname"><br>
-        <br>
-        <h4>¿como supiste de nosotros?</h4>
-        <form>
-            <input type="checkbox" id="medios" name="medios" value="1">
-            <label for="medios"> facebook</label><br>
-            <input type="checkbox" id="medios" name="medios" value="2">
-            <label for="medios"> El periodico</label><br>
-            <input type="checkbox" id="medios" name="medios" value="3">
-            <label for="medios"> Un contacto</label><br>
-            <br>
-
-
-            <input type="button" value="Enviar">
+    <input type="checkbox" id="medios" name="medios" value="1">
+    <label for="medios"> facebook</label><br>
+    <input type="checkbox" id="medios1" name="medios1" value="2">
+    <label for="medios1"> El periodico</label><br>
+    <input type="checkbox" id="medios2" name="medios2" value="3">
+    <label for="medios2"> Un contacto</label><br>
+    <br>
 
 
+    <input type="button" value="Enviar">
 
 
 
@@ -79,8 +77,10 @@
 
 
 
-            <body>
 
-            </body>
+
+
+
+    </body>
 
 </html>

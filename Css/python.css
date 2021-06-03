@@ -1,0 +1,108 @@
+                * {
+                    margin: 0px;
+                    padding: 0px;
+                }
+                
+                h1 {
+                    color: white;
+                    padding: 20px;
+                }
+                
+                span {
+                    color: #384fbd;
+                }
+                
+                li.mprin {
+                    margin-left: 10px;
+                    font-size: 22px;
+                    list-style-type: none;
+                    display: inline-block;
+                    padding-left: 20px;
+                }
+                
+                li.MenuChico {
+                    display: block;
+                }
+                
+                ul {
+                    color: white;
+                    /*margin-left: 20px;*/
+                }
+                
+                p {
+                    color: white;
+                    padding-left: 10px;
+                }
+                
+                #contenedor {
+                    margin: 20px;
+                    border: 1px solid white;
+                    width: 970px;
+                    background-color: #245076;
+                }
+                
+                div.cabecera {
+                    margin: 10px;
+                    padding-left: 70px;
+                    min-height: 90px;
+                    border-radius: 15px;
+                }
+                
+                div.foto {
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                
+                div.busca {
+                    min-height: 90px;
+                    display: inline-block;
+                    vertical-align: top;
+                    padding-left: 290px;
+                }
+                
+                div.formu {
+                    background-color: #444444;
+                    min-height: 15px;
+                    width: 220px;
+                    border-radius: 5px;
+                    padding: 15px;
+                }
+                
+                img.logo {
+                    width: 320px;
+                }
+                
+                #menu {
+                    border: #1b335d solid 1px;
+                    padding: 10px;
+                    margin: 10px;
+                    min-height: 20px;
+                    width: 770px;
+                    background-color: #457dad;
+                    border-radius: 10px;
+                    margin-left: 80px;
+                }
+                
+                #botongo {
+                    min-height: 20px;
+                    width: 30px;
+                    background-color: #245076;
+                    border-radius: 5px;
+                    border: 1px solid white;
+                }
+                
+                #textob {
+                    width: 175px;
+                    height: 28px;
+                    border: 1px solid gray;
+                }
+                
+                a {
+                    color: white;
+                }
+                
+                #texto {
+                    font-size: 9px;
+                    text-align: center;
+                    margin: bottom 20px;
+                }

@@ -1,55 +1,3 @@
-/*CSS reset settings here*/
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-#wrapper {
-    position: fixed;
-    width: 950px;
-    background-color: silver;
-    margin: 21px;
-}
-
-#header {
-    margin: 10px;
-    min-height: 150px;
-    background-color: green;
-}
-
-#navigation {
-    margin: 10px;
-    display: inline-block;
-    min-height: 300px;
-    width: 200px;
-    background-color: blue;
-}
-
-#main_content {
-    margin: 10px;
-    display: inline-block;
-    vertical-align: top;
-    min-height: 400px;
-    width: 700px;
-    background-color: red;
-}
-
-.subcontents {
-    margin: 10px;
-    display: inline-block;
-    min-height: 200px;
-    width: 210px;
-    background-color: yellow;
-}
-
-#advertisement {
-    margin: 14px;
-    min-height: 120px;
-    width: 660px;
-    background-color: purple;
-}
-
 @media only screen and (max-width:480px) {
     .cabecera {
         width: 97%;
@@ -104,7 +52,7 @@
     margin: 8px;
 }
 
-.nav {
+.navegacion {
     vertical-align: top;
     background-color: blue;
     min-height: 300px;

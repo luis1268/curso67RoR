@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>Corona Desaparece</title>
+    <style type="text/css">
+        #corona-1 {
+            width: 240px;
+            height: auto;
+            margin: 3px solid rgb(0, 0, 0);
+        }
+        
+        #corona-2 {
+            width: 240px;
+            height: auto;
+        }
+        
+        #corona-3 {
+            width: 240px;
+            height: auto;
+        }
+        
+        #corona-4 {
+            width: 240px;
+            height: auto;
+        }
+        
+        #corona-5 {
+            width: 240px;
+            height: auto;
+        }
+        
+        #corona-6 {
+            width: 240px;
+            height: auto;
+        }
+        
+        #corona-7 {
+            width: 240px;
+            height: auto;
+        }
+        
+        #corona-8 {
+            width: 240px;
+            height: auto;
+        }
+        
+        div.m1 {
+            margin: 2px solid black !important;
+        }
+        
+        #button {
+            background-color: chartreuse;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            var n1 = 1;
+            var n2 = 1;
+            var n3 = 1;
+            var n4 = 1;
+            var n5 = 1;
+            var n6 = 1;
+            var n7 = 1;
+            var n8 = 1;
+
+            $('#corona-1').click(function() {
+                if (n1 == 1) {
+                    n1 = 0;
+                } else {
+                    n1 = 1;
+                }
+                $("#corona-1").slideToggle();
+            });
+            $('#corona-2').click(function() {
+                if (n2 == 1) {
+                    n2 = 0;
+                } else {
+                    n2 = 1;
+                }
+                $("#corona-2").slideToggle();
+            });
+            $('#corona-3').click(function() {
+                if (n3 == 1) {
+                    n3 = 0;
+                } else {
+                    n3 = 1;
+                }
+                $("#corona-3").slideToggle();
+            });
+            $('#corona-4').click(function() {
+                if (n4 == 1) {
+                    n4 = 0;
+                } else {
+                    n4 = 1;
+                }
+                $("#corona-4").slideToggle();
+            });
+            $('#corona-5').click(function() {
+                if (n5 == 1) {
+                    n5 = 0;
+                } else {
+                    n5 = 1;
+                }
+                $("#corona-5").slideToggle();
+            });
+            $('#corona-6').click(function() {
+                if (n6 == 1) {
+                    n6 = 0;
+                } else {
+                    n6 = 1;
+                }
+                $("#corona-6").slideToggle();
+            });
+            $('#corona-7').click(function() {
+                if (n7 == 1) {
+                    n7 = 0;
+                } else {
+                    n7 = 1;
+                }
+                $("#corona-7").slideToggle();
+            });
+            $('#corona-8').click(function() {
+                if (n8 == 1) {
+                    n8 = 0;
+                } else {
+                    n8 = 1;
+                }
+                $("#corona-8").slideToggle();
+            });
+            $('#button').click(function() {
+                if (n1 == 0) {
+                    $("#corona-1").show();
+                    n1 = 1;
+                }
+                if (n2 == 0) {
+                    $("#corona-2").show();
+                    n2 = 1;
+                }
+                if (n3 == 0) {
+                    $("#corona-3").show();
+                    n3 = 1;
+                }
+                if (n4 == 0) {
+                    $("#corona-4").show();
+                    n4 = 1;
+                }
+                if (n5 == 0) {
+                    $("#corona-5").show();
+                    n5 = 1;
+                }
+                if (n6 == 0) {
+                    $("#corona-6").show();
+                    n6 = 1;
+                }
+                if (n7 == 0) {
+                    $("#corona-7").show();
+                    n7 = 1;
+                }
+                if (n8 == 0) {
+                    $("#corona-8").show();
+                    n8 = 1;
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>JQuery 1</h2>
+        <div class="row">
+            <div class="col">
+                <img id="corona-1" src="coronavirus/coorna1.jpg" alt="corona1">
+            </div>
+            <div class="col">
+                <img id="corona-2" src="coronavirus/corona2.jpg" alt="corona2">
+            </div>
+            <div class="col">
+                <img id="corona-3" src="coronavirus/coorna3.jpg" alt="corona3">
+            </div>
+            <div class="col">
+                <img id="corona-4" src="coronavirus/corona4.jpg" alt="corona4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img id="corona-5" src="coronavirus/corona4.jpg" alt="corona1">
+            </div>
+            <div class="col">
+                <img id="corona-6" src="coronavirus/coorna3.jpg" alt="corona2">
+            </div>
+            <div class="col">
+                <img id="corona-7" src="coronavirus/corona2.jpg" alt="corona3">
+            </div>
+            <div class="col">
+                <img id="corona-8" src="coronavirus/coorna1.jpg" alt="corona4">
+            </div>
+        </div>
+        <input id="button" type="button" value="Restaurar">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>funciones jquery</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#botonClass1').click(function() {
+                $('#texto1').css('height', '+=22');
+            });
+            $('#botonClass2').click(function() {
+
+                var valor = parseInt($('#texto1').css('height'), 10);
+                if (valor <= 180) {
+                    alert("No se puede achicar mas.");
+                } else {
+                    $('#texto1').css('height', '-=20');
+                }
+            });
+            $('#botonHide').click(function() {
+                $("#texto2").hide();
+            });
+            $('#botonShow').click(function() {
+                $("#texto2").show();
+            });
+            $('#botonAgreFin').click(function() {
+                $("#letras").append("<strong> Final </strong>");
+            });
+            $('#botonAgrePrin').click(function() {
+                $("#letras").prepend("<strong> Principio </strong>");
+            });
+            $('#botonToggle').click(function() {
+                $("#texto4").slideToggle("slow");
+            });
+            $('#botonRojo').click(function() {
+                $("#texto5").addClass("bg-danger");
+            });
+            $('#botonGris').click(function() {
+                $("#texto5").removeClass("bg-danger");
+            });
+            $('#botonIn').click(function() {
+                $("#texto6").fadeIn();
+            });
+            $('#botonOut').click(function() {
+                $("#texto6").fadeOut();
+            });
+            $('#botonBe').click(function() {
+                $("#aca").before("<h1>Titulo Nuevo!!!</h1>");
+            });
+            $('#botonAf').click(function() {
+                $("#aca").after("<h3>Titulo chico!!!</h3>");
+            });
+            $("input")
+                .keyup(function() {
+                    var value = $(this).val();
+                    $("#aca").text(value);
+                })
+                .keyup();
+
+        });
+    </script>
+
+    <title> funciones JQuery</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-secondary p-5">
+                <input id="botonClass1" type="button" value="Agrega">
+                <input id="botonClass2" type="button" value="Quita">
+            </div>
+            <div id="texto1" class="col-9 bg-secondary text-center text-light" style="height: 200px;">
+                <h1>aumenta y disminuye tamaño del div</h1>
+                <p>al clikear aumenta y disminuye tamaño de la caja.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col bg-secondary p-5">
+                <input id="botonHide" type="button" value="Oculta">
+                <input id="botonShow" type="button" value="Muestra">
+            </div>
+            <div id="texto2" class="col-9 bg-secondary text-center text-light" style="height: 200px;">
+                <h1>Texto que se oculta y aparece</h1>
+                <p>Oculta y muestra cuando le das a los botones correspondiente.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col bg-secondary p-5">
+                <input id="botonAgreFin" type="button" value="Final">
+                <input id="botonAgrePrin" type="button" value="Principio">
+            </div>
+            <div id="texto3" class="col-9 bg-secondary text-center text-light" style="height: 200px;">
+                <h1>Texto que crece</h1>
+                <p id="letras">Este texto crece al hacer click en los botones.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col bg-secondary p-5">
+                <input id="botonToggle" type="button" value="Toggle">
+            </div>
+            <div id="texto4" class="col-9 bg-secondary text-center text-light" style="height: 200px;">
+                <h1>Texto </h1>
+                <p>texto importante.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col bg-secondary p-5">
+                <input id="botonRojo" type="button" value="Rojo">
+                <input id="botonGris" type="button" value="Gris">
+            </div>
+            <div id="texto5" class="col-9 bg-secondary text-center text-light" style="height: 200px;">
+                <h1>Caja </h1>
+                <p>cambia a color rojo al hacer clik.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col bg-secondary p-5">
+                <input id="botonIn" type="button" value="Fade In">
+                <input id="botonOut" type="button" value="Fade Out">
+            </div>
+            <div id="texto6" class="col-9 bg-secondary text-center text-light" style="height: 200px;">
+                <h1>Blurry Box!!!</h1>
+                <p>Esta caja es como la niebla.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col bg-secondary p-5">
+                <input id="botonBe" type="button" value="Before">
+                <input id="botonAf" type="button" value="After">
+            </div>
+            <div id="texto7" class="col-9 bg-secondary text-center text-light" style="height: 200px;">
+                <p id="aca">Esta caja solo tiene título si clikeas.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col bg-secondary p-5">
+                <input id="botonVal" type="button" value="Nada">
+            </div>
+            <div id="texto8" class="col-9 bg-secondary text-center text-light" style="height: 200px;">
+                <h1>Título de sensacion</h1>
+                <input type="text" name="palabrotas" id="palabrotas"><br>
+            </div>
+        </div>
+        <hr>
+</body>
+
+</html>

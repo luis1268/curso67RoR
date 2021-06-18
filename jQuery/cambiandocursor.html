@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <title>cambiando cursor</title>
+    <style type="text/css">
+        #cat-1 {
+            width: 200px;
+            height: auto;
+            margin: 3px solid rgb(0, 0, 0) !important;
+        }
+        
+        #cat-2 {
+            width: 200px;
+            height: auto;
+        }
+        
+        #cat-3 {
+            width: 200px;
+            height: auto;
+        }
+        
+        #cat-4 {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            var srci = "";
+
+            $('img').hover(function() {
+                srci = $(this).attr("src");
+                console.log("SRC : " + srci);
+                $(this).attr("src", "cat4.png");
+
+            }, function() {
+                $(this).attr("src", srci);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Cambiando imágenes</h2>
+        <div class="row">
+            <div class="col">
+                <img id="cat-1" src="cat0.png" alt="cat 0">
+            </div>
+            <div class="col">
+                <img id="cat-2" src="cat1.png" alt="cat 1">
+            </div>
+            <div class="col">
+                <img id="cat-3" src="cat2.png" alt="cat 2">
+            </div>
+            <div class="col">
+                <img id="cat-4" src="cat3.png" alt="cat 3">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

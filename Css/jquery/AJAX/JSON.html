@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY BASE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //obtener desde una url data o respuesta en formato JSON
+            var arraytemporal = [];
+            for (let i = 1; i <= 10; i++) {
+
+
+
+
+                $.get("https://pokeapi.co/api/v2/pokemon/" + i + "/", function(respuesta) {
+                    // console.log(respuesta.id); //imprime toda la informacion del pokemon
+                    //console.log(respuesta.name); //imprime solo el contenido del id
+                    //console.log(respuesta.sprites.front_default); //imprime la url de la imagen
+
+
+                    //  $('#container').append('<p>El id es:' + respuesta.id + '  </p>');
+                    // $('#container').append('<p>El nombre es:' + respuesta.name + '  </p>');
+                    // $('#container').append('<img src='respuesta + sprites.front_default + '" alt="">');
+                    arraytemporal.push(respuesta);
+
+
+                }, "json");
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="container"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>cual-pokemon</title>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <style>
+        #contenedor {
+            width: 95%;
+        }
+        
+        #bulbasaur {
+            width: 85%;
+            display: inline-block;
+            background-color: rgb(211, 211, 211);
+        }
+        
+        #datos {
+            width: 10%;
+            border: 4px solid rgb(0, 255, 34);
+            float: right;
+            min-height: 150px;
+            padding: 10px;
+            display: inline-block;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', 'img', function() {
+                var valor = $(this).attr('id');
+                var cadena = "https://pokeapi.co/api/v2/pokemon/" + valor + "/";
+                $.get(cadena, function(res) {
+                    var html_str = "";
+                    html_str += "<h2>" + res.name + "</h2>"
+                    html_str += '<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/' + valor + '.png" alt="Pokemon">';
+                    html_str += "<h4>Tipos</h4>";
+                    html_str += "<ul>";
+                    for (var i = 0; i < res.types.length; i++) {
+                        html_str += "<li>" + res.types[i].type.name + "</li>";
+                    }
+                    html_str += "</ul>";
+                    html_str += "<p> Altura : " + res.height + "</p>";
+                    html_str += "<p> Ancho  : " + res.weight + "</p>";
+                    $("#datos").html(html_str);
+                }, "json");
+
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="bulbasaur">
+        </div>
+        <div id="datos">
+            <p> cualkier cosa </p>
+        </div>
+    </div>
+    <script>
+        function drawPokemon(l) {
+            content = "";
+            content = '<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/' + l + '.png" alt="Pokemon" id="' + l + '">';
+            console.log(content);
+            $("#bulbasaur").append(content);
+        }
+        for (var i = 1; i <= 151; i++) {
+            drawPokemon(i);
+        }
+    </script>
+</body>
+
+</html>

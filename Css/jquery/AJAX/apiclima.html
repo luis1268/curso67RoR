@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('p').click(function() {
+                var ciudad = $('#ciudad').val(); //obtener el valor del elemento (input) 
+                var url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ciudad + '&appid=9083f99a3436a1527cc464f9e252aba3';
+
+                $.get(url, function(objeto) {
+
+
+                    $('#prueba').append('<p>En:' + objeto.name + '  </p>');
+                    $('#prueba').append('<p>La densidad es:' + objeto.wind.deg + '  </p>');
+                    $('#prueba').append('<p>La longitud es:' + objeto.coord.lon + '  </p>');
+                    $('#prueba').append('<p>La temperatura actual es:' + objeto.main.temp + '  </p>');
+
+
+
+
+
+
+
+
+                }, "json");
+
+
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" name="ciudad" id="ciudad">
+        <p>Consultar</p>
+    </div>
+    <div id="prueba">
+
+    </div>
+</body>
+
+</html>

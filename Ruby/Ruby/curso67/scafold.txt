@@ -1,0 +1,6 @@
+rails cliente ~/fundamentosrails/rails/
+
+rails new cliente
+
+
+rails g scaffold luisflores name:string apellido:string edad:integer email:string contrasena:string
